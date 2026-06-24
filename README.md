@@ -49,6 +49,18 @@ Batch sizes ranging from 1 to 256 are evaluated, measuring the trade-off between
 
 ---
 
+## Key Findings
+
+| Experiment | Best Configuration | Val Accuracy | Test Accuracy | Train Seconds/Epoch |
+|------------|-------------------|-------------|---------------|-------------------|
+| Softmax Regression | Linear classifier (baseline) | 40.38% | 40.33% | 3.47s |
+| CNN Depth | 8-layer CNN | 62.54% | 62.64% | 11.37s |
+| Regularisation | Residual + weight decay | 64.28% | 65.14% | 16.23s |
+| Learning Rate | LR = 0.01 | 75.62% | 75.26% | 19.67s |
+| Mini-Batch Size | Batch size 8 | 77.37% | 77.37% | 157.84s |
+
+---
+
 ## Tech Stack
 
 | Tool | Purpose |
